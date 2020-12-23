@@ -6,7 +6,7 @@ budget = 550
 
 URL = ['https://www.imovirtual.com/pt/anuncio/t1-kitchnette-com-terraco-em-matosinhos-sul-ID11uqi.html#f523fbcd8f', 'https://www.imovirtual.com/pt/anuncio/t1-ao-hosp-s-joao-arroteia-com-lg-de-garagem-ID14tnw.html#f523fbcd8f']
 
-headers = {'UserAgent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+headers = {'UserAgent': '##insert your user Agent - check readme to know how'}
 
 for i in URL:
     page = requests.get(i, headers=headers)
@@ -27,15 +27,15 @@ for i in URL:
         server.starttls()
         server.ehlo()
 
-        server.login('dsousapinto.7@gmail.com', 'rrbedsikubvaqdnv')
+        server.login('dsomethingmail.com', 'Your password')
 
         subject = 'Price DROP!'
         body = 'Ve o link da casa que desceu o preco:'
 
 
         server.sendmail(
-            'dsousapinto.7@gmail.com',
-            'dsousapinto.7@gmail.com',
+            'something@gmail.com',
+            'something@gmail.com',
             msg=f'Subject: {subject}\n\n{body}'
             )
 
@@ -49,15 +49,15 @@ for i in URL:
         server.starttls()
         server.ehlo()
 
-        server.login('dsousapinto.7@gmail.com', 'rrbedsikubvaqdnv')
+        server.login('something@gmail.com', 'Your password')
 
         subject = 'Price EQUAL!'
         body = 'Ve o link da casa que nao alterou o preco:'
 
 
         server.sendmail(
-            'dsousapinto.7@gmail.com',
-            'dsousapinto.7@gmail.com',
+            'something@gmail.com',
+            'something@gmail.com',
             msg=f'Subject: {subject}\n\n{body}'
             )
 
